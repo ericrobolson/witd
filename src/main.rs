@@ -104,17 +104,16 @@ fn main() {
                 if !last_updates.contains_key(&path_str) {
                     changed = true;
                     changed_paths.push(path_str.clone());
+                    last_updates.insert(path_str.clone(), last_update);
                 } else {
                     // If the file has been tracked, check if it has changed
                     let last_update_time = last_updates.get(&path_str).unwrap();
                     if last_update > *last_update_time {
                         changed = true;
                         changed_paths.push(path_str.clone());
+                        last_updates.insert(path_str.clone(), last_update);
                     }
                 }
-
-                // Update the last update time of the file
-                last_updates.insert(path_str.clone(), last_update);
             }
         }
 
