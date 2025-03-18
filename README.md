@@ -9,7 +9,7 @@ cargo install witd
 
 ## Example Usage
 ```
-cargo witd -w=src/ -i=target/ cargo test
+witd -w=src/ -i=target/ cargo test
 ```
 
 ## Flags
