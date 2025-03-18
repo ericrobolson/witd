@@ -1,0 +1,16 @@
+[package]
+name = "witd"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+
+documentation = "https://docs.rs/witd/latest/witd/"
+description = "A simple CLI tool to watch for file changes and run commands."
+repository = "https://github.com/ericrobolson/witd"
+authors = ["Eric Olson <eric@ericrobolson.com>"]
+categories = ["development-tools"]
+keywords = ["watch", "files", "commands"]
+
+
+[dependencies]
+walkdir = "2.5.0"
