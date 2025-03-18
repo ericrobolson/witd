@@ -143,7 +143,7 @@ fn main() {
         }
 
         // Sleep for a short duration and check again
-        std::thread::sleep(std::time::Duration::from_millis(420));
+        std::thread::sleep(std::time::Duration::from_millis(100));
     }
 }
 
